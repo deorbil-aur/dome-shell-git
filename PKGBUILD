@@ -25,4 +25,6 @@ build() {
 package() {
   cd "$srcdir/dome-shell"
   install -Dm755 "dist/dome-shell" "$pkgdir/usr/bin/dome-shell"
+  install -Dm644 "LICENSE" "$pkgdir/usr/share/licenses/dome-shell/LICENSE"
+  install -Dm644 "README.md" "$pkgdir/usr/share/doc/dome-shell/README.md"
 }
